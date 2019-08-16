@@ -8,6 +8,7 @@ target 'poetTreeApp' do
   # Pods for poetTreeApp
 
 pod 'Firebase/Core'
+pod 'Firebase/Firestore'
 
 end
 
