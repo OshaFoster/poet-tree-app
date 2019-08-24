@@ -12,6 +12,7 @@ import { GithubTypes } from '../Redux/GithubRedux'
 
 import { startup } from './StartupSagas'
 import { getUserAvatar } from './GithubSagas'
+import { getInitialData } from './FirebaseSagas'
 
 /* ------------- API ------------- */
 
@@ -28,5 +29,8 @@ export default function * root () {
 
     // some sagas receive extra parameters in addition to an action
     takeLatest(GithubTypes.USER_REQUEST, getUserAvatar, api)
+
+    // add firebase actions
+    // takeLatest(FIREBASE_ACTION_CALL, getInitialData)
   ])
 }
