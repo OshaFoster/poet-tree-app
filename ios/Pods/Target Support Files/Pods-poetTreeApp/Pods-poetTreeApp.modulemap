@@ -1,6 +1,0 @@
-framework module Pods_poetTreeApp {
-  umbrella header "Pods-poetTreeApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
