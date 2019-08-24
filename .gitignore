@@ -58,3 +58,6 @@ buck-out/
 # Misc
 #
 .env
+
+# Cocoapods
+ios/Pods
