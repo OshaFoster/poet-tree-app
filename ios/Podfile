@@ -6,9 +6,9 @@ target 'poetTreeApp' do
   use_frameworks!
 
   # Pods for poetTreeApp
-
-  pod 'Firebase/Core', '~> 6.3.0'
-  pod 'Firebase/Firestore', '~> 6.3.0'
+  # pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app/ios' 
+  pod 'Firebase/Core', '~> 6.5.0'
+  pod 'Firebase/Firestore', '~> 6.5.0'
 
 end
 

@@ -1254,6 +1254,19 @@
     xcode "^2.0.0"
     xmldoc "^0.4.0"
 
+"@react-native-firebase/app-types@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/app-types/-/app-types-0.3.0.tgz#311e0b5f604da0b34f9ccb845daf6a737764cece"
+  integrity sha512-38J35TVe0zaok4V35MgFGO+jLIJWdVVZbTji9xBfX4KSHBanKiLGHlG6Xb5JFcTkbive8gfRZXz4Mw7u/hWbKw==
+
+"@react-native-firebase/app@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/app/-/app-0.3.0.tgz#9e124b651dd4fbfdddb13243cef78a812e30f2e4"
+  integrity sha512-dbHeIC+fZ9SP1A+mf/hJ0HozO6Gwv6kY4t4/+JjYSJ19AhW9uU1r4nbLb5kkuaiu6sKUyHSUg4TUkDQZpEPXSA==
+  dependencies:
+    "@react-native-firebase/app-types" "0.3.0"
+    opencollective-postinstall "^2.0.1"
+
 "@react-navigation/core@~3.4.1":
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.4.2.tgz#bec563e94fde40fbab3730cdc97f22afbb2a1498"
@@ -9117,6 +9130,11 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+opencollective-postinstall@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.2.tgz#5657f1bede69b6e33a45939b061eb53d3c6c3a89"
+  integrity sha512-pVOEP16TrAO2/fjej1IdOyupJY8KDUM1CvsaScRbw6oddvpQoOfGk4ywha0HKKVAD6RkW4x6Q+tNBwhf3Bgpuw==
+
 opn@5.4.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/opn/-/opn-5.4.0.tgz#cb545e7aab78562beb11aa3bfabc7042e1761035"
@@ -10233,10 +10251,10 @@ react-native-tab-view@^1.2.0, react-native-tab-view@^1.4.1:
   dependencies:
     prop-types "^15.6.1"
 
-react-native@0.59.9:
-  version "0.59.9"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.59.9.tgz#c94ee4fa35121720c05235a2dd6cdd2784bf5177"
-  integrity sha512-/+8EgIZwFpYHyyJ7Zav7B6LHNrytwUQ+EKGT/QV7HSrgpf2Y5NZNeUYUHKiVKLYpBip1G32/LcAECQj37YRwGQ==
+react-native@^0.59.9:
+  version "0.59.10"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.59.10.tgz#352f381e382f93a0403be499c9e384bf51c2591c"
+  integrity sha512-guB9YW+pBqS1dnfZ4ntzjINopiCUAbdmshU2wMWD1W32fRczLAopi/7Q2iHKP8LTCdxuYZV3fa9Mew5PSuANAw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@react-native-community/cli" "^1.2.1"
