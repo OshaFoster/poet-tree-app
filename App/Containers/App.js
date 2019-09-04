@@ -1,13 +1,13 @@
-import "../Config";
-import DebugConfig from "../Config/DebugConfig";
-import React, { Component } from "react";
-import { Provider } from "react-redux";
-import RootContainer from "./RootContainer";
-import createStore from "../Redux";
-import firestore from "@react-native-firebase/firestore";
+import '../Config'
+import DebugConfig from '../Config/DebugConfig'
+import React, { Component } from 'react'
+import { Provider } from 'react-redux'
+import RootContainer from './RootContainer'
+import createStore from '../Redux'
+import firestore from '@react-native-firebase/firestore'
 
 // create our store
-const store = createStore();
+const store = createStore()
 
 /**
  * Provides an entry point into our application.  Both index.ios.js and index.android.js
@@ -19,27 +19,24 @@ const store = createStore();
  * We separate like this to play nice with React Native's hot reloading.
  */
 
-// import PropTypes from 'prop-types';
-// import styled from 'styled-components';
-
 class App extends Component {
   componentDidMount = async () => {
     const documentSnapshot = await firestore()
-      .collection("words")
-      .doc("vYzrR2IndP4t13fBiNqa")
-      .get();
+      .collection('words')
+      .doc('vYzrR2IndP4t13fBiNqa')
+      .get()
 
-    console.log("words", documentSnapshot.data());
-  };
+    console.log('words', documentSnapshot.data())
+  }
 
   render() {
     return (
       <Provider store={store}>
         <RootContainer />
       </Provider>
-    );
+    )
   }
 }
 
 // allow reactotron overlay for fast design in dev mode
-export default DebugConfig.useReactotron ? console.tron.overlay(App) : App;
+export default DebugConfig.useReactotron ? console.tron.overlay(App) : App
