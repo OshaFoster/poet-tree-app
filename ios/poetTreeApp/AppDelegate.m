@@ -10,7 +10,7 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
-// #import <Firebase/Firebase.h>
+#import <Firebase/Firebase.h>
 
 @implementation AppDelegate
 
@@ -28,7 +28,7 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  // [FIRApp configure];
+  [FIRApp configure];
   return YES;
 }
 
