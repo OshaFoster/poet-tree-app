@@ -3,18 +3,52 @@
 
 target 'poetTreeApp' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  # use_frameworks!
 
   # Pods for poetTreeApp
 
-  pod 'Firebase/Core'
-  pod 'Firebase/Firestore'
+  # React Native requirements
+  pod 'React', path: '../node_modules/react-native', subspecs: [
+    # Comment out any unneeded subspecs to reduce bundle size.
+    'Core',
+    'CxxBridge',
+    'DevSupport',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTBlob',
+    'RCTCameraRoll',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTNetwork',
+    'RCTPushNotification',
+    'RCTSettings',
+    'RCTTest',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+    'RCTLinkingIOS'
+  ]
 
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  # Third party deps podspec link
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  # Add new dependencies here
+  pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
+  pod 'RNFBAuth', :path => '../node_modules/@react-native-firebase/auth'
   pod 'RNFBFirestore', :path => '../node_modules/@react-native-firebase/firestore'
 
-  pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
-
-  pod 'RNFBAuth', :path => '../node_modules/@react-native-firebase/auth'
+  # Stackoverflow solution - do we need?
+  # post_install do |installer|
+  #   installer.pods_project.targets.each do |target|
+  #     if target.name == "React"
+  #         target.remove_from_project
+  #     end
+  #   end
+  # end 
 
 end
 
