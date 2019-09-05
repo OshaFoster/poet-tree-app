@@ -25,6 +25,9 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
+    "@react-native-firebase/app": "^0.3.0",
+    "@react-native-firebase/auth": "^0.3.0",
+    "@react-native-firebase/firestore": "^0.3.0",
     "apisauce": "^1.0.2",
     "format-json": "^1.0.3",
     "identity-obj-proxy": "^3.0.0",
