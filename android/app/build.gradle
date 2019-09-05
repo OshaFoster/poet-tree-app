@@ -138,6 +138,9 @@ android {
 }
 
 dependencies {
+    implementation project(':@react-native-firebase_auth')
+    implementation project(':@react-native-firebase_app')
+    implementation project(':@react-native-firebase_firestore')
     implementation project(':@react-native-community_async-storage')
     implementation project(':react-native-device-info')
     implementation project(':react-native-gesture-handler')

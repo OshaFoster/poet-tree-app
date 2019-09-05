@@ -3,6 +3,9 @@ package com.poettreeapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
+import io.invertase.firebase.ReactNativeFirebaseAppPackage;
+import io.invertase.firebase.firestore.ReactNativeFirebaseFirestorePackage;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
@@ -26,6 +29,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactNativeFirebaseAuthPackage(),
+            new ReactNativeFirebaseAppPackage(),
+            new ReactNativeFirebaseFirestorePackage(),
             new AsyncStoragePackage(),
             new RNDeviceInfo(),
             new RNGestureHandlerPackage()
